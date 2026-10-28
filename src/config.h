@@ -1,14 +1,12 @@
 #pragma once
 
-#include <cstdint>
-
 // TCP port the WebSocket server listens on.
 #define WS_PORT 81
 
 // The coordinator's own WiFi network (access point). Workers and dashboards
 // join it and find the coordinator at 192.168.4.1.
 #define AP_SSID "ESP32-Process-Network"
-#define AP_PASSWORD "ProcessDemo123" // at least 8 characters
+#define AP_PASSWORD "ProcessDemo123"  // at least 8 characters
 #define AP_CHANNEL 1
 // Devices that may join at once; as many as the task dispatcher takes WebSocket clients.
 #define AP_MAX_CLIENTS 5
